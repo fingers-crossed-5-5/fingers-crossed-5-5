@@ -282,6 +282,19 @@ body {
 .title {
   font-size: 120px;
 }
+
+.mainpage_footer {
+  background-image: url(../img/footer.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between; /* 將內容分布在兩邊 */
+  align-items: center; /* 確保 Logo 和 PlayAgain 圖片垂直對齊 */
+  padding: 20px; /* 添加適當的內邊距 */
+}
 .footer_logo_img {
   width: 300px;
   height: auto;
