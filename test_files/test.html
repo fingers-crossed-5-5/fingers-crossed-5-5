@@ -3,111 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test_hand</title>
-    <link href="./test.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-      $(document).click(function () {
-        $(":radio");
-      });
-      $(document).click(function () {
-        $(":reset");
-      });
-    </script>
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./img/finger_icon.png" rel="icon" />
+    <link href="./css/main_page.css" rel="stylesheet" />
+    <title>意有所指</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="mainpage_nav" href="./index.html"
+          ><img
+            src="./img/mainlogo.png"
+            width="240px"
+            height="auto"
+            margin="20px"
+            padding="20px"
+        /></a>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="./index.html"
+            ><div class="main">
+              <img src="./img/Home.png" width="auto" height="30px" />
+            </div>
+            <img
+              src="./img/pointing_finger.png"
+              width="300px"
+              height="auto"
+              class="pointing_finger"
+          /></a>
+          <a href="./aboutus_profile.html"
+            ><div class="aboutus">
+              <img src="./img/About_us.png" width="auto" height="30px" />
+            </div>
+            <img
+              src="./img/pointing_finger.png"
+              width="300px"
+              height="auto"
+              class="pointing_finger"
+          /></a>
+        </div>
+        <div class="openNav">
+          <span style="font-size: 50px; cursor: pointer" onclick="openNav()"
+            >&#9776;
+          </span>
+        </div>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >首頁</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus_profile.html">關於我們</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div class="main_hand">
-      <img src="./img/palm.png" height="656px" width="auto" />
+      <img src="./img/palm.png" height="909px" width="auto" />
     </div>
-    <form action="" id="result">
+    <form action="">
       <div class="small_finger_button">
         <div class="small_finger">
           <img
             src="./img/small_finger.png"
-            height="305x"
+            height="430px"
             width="auto"
             id="small_finger_picture"
           />
         </div>
-        <input type="radio" name="finger" value="1" id="small_finger_button" />
+        <input
+          type="checkbox"
+          name="finger"
+          value="a"
+          id="small_finger_button"
+        />
         <label for="small_finger_button"
-          ><img src="./img/finger_point.png" width="26px" height="auto"
+          ><img src="./img/finger_point.png" width="34px" height="auto"
         /></label>
       </div>
       <div class="noname_finger_button">
         <div class="noname_finger">
           <img
             src="./img/noname_finger.png"
-            height="391px"
+            height="532px"
             width="auto"
             id="noname_finger_picture"
           />
         </div>
         <input
-          type="radio"
+          type="checkbox"
           name="finger"
-          value="10"
+          value="b"
           id="noname_finger_button"
         />
         <label for="noname_finger_button"
-          ><img src="./img/finger_point.png" width="26px" height="auto"
+          ><img src="./img/finger_point.png" width="34px" height="auto"
         /></label>
       </div>
       <div class="middle_finger_button">
         <div class="middle_finger">
           <img
             src="./img/middle_finger.png"
-            height="431px"
+            height="574px"
             width="auto"
             id="middle_finger_picture"
           />
         </div>
         <input
-          type="radio"
+          type="checkbox"
           name="finger"
-          value="100"
+          value="c"
           id="middle_finger_button"
         />
         <label for="middle_finger_button"
-          ><img src="./img/finger_point.png" width="26px" height="auto"
+          ><img src="./img/finger_point.png" width="34px" height="auto"
         /></label>
       </div>
       <div class="index_finger_button">
         <div class="index_finger">
           <img
             src="./img/index_finger.png"
-            height="386px"
+            height="520px"
             width="auto"
             id="index_finger_picture"
           />
         </div>
         <input
-          type="radio"
+          type="checkbox"
           name="finger"
-          value="1000"
+          value="d"
           id="index_finger_button"
         />
         <label for="index_finger_button"
-          ><img src="./img/finger_point.png" width="26px" height="auto"
+          ><img src="./img/finger_point.png" width="34px" height="auto"
         /></label>
       </div>
       <div class="mother_finger_button">
         <div class="mother_finger">
           <img
             src="./img/mother_finger.png"
-            height="285px"
+            height="383px"
             width="auto"
             id="mother_finger_picture"
           />
         </div>
         <input
-          type="radio"
+          type="checkbox"
           name="finger"
-          value="10000"
+          value="e"
           id="mother_finger_button"
         />
         <label for="mother_finger_button"
-          ><img src="./img/finger_point.png" width="26px" height="auto"
+          ><img src="./img/finger_point.png" width="34px" height="auto"
         /></label>
       </div>
       <div class="reset_button">
@@ -121,19 +189,136 @@
         <label for="press_reset_button">
           <img
             src="./img/back_button_unpressed.png"
-            width="115px"
+            width="140px"
             height="auto"
             alt="Back to Main Page"
           />
         </label>
       </div>
+
       <div class="ok_button">
         <input type="submit" style="display: none" id="press_ok_button" />
         <label for="press_ok_button"
-          ><img src="./img/ok_button_unpressed.png" width="260px" height="auto"
+          ><img src="./img/ok_button_unpressed.png" width="261px" height="auto"
         /></label>
       </div>
     </form>
-    <script src="./test.js"></script>
+    <div class="small_finger_text">
+      <img src="./img/small_finger_text.png" width="60px" height="auto" />
+    </div>
+    <div class="noname_finger_text">
+      <img src="./img/noname_finger_text.png" width="60px" height="auto" />
+    </div>
+    <div class="middle_finger_text">
+      <img src="./img/middle_finger_text.png" width="60px" height="auto" />
+    </div>
+    <div class="index_finger_text">
+      <img src="./img/index_finger_text.png" width="60px" height="auto" />
+    </div>
+    <div class="mother_finger_text">
+      <img src="./img/mother_finger_text.png" width="60px" height="auto" />
+    </div>
+    <div class="info">
+      <img src="./img/info_1.png" width="607px" height="auto" class="info_1" />
+      <img src="./img/info_2.png" width="607px" height="auto" class="info_2" />
+      <img src="./img/info_3.png" width="607px" height="auto" class="info_3" />
+    </div>
+    <div class="running_text_container">
+      <div class="running_text">
+        <p class="text_chinese">
+          手勢的含義隨著文化背景不同而變化。如果身處陌生的地方，建議觀察當地人如何使用手勢，避免因文化差異產生誤會。
+        </p>
+      </div>
+      <div class="running_text2">
+        <p class="text_chinese">
+          手勢的含義隨著文化背景不同而變化。如果身處陌生的地方，建議觀察當地人如何使用手勢，避免因文化差異產生誤會。
+        </p>
+      </div>
+      <div class="running_text3">
+        <p class="text_chinese">
+          手勢的含義隨著文化背景不同而變化。如果身處陌生的地方，建議觀察當地人如何使用手勢，避免因文化差異產生誤會。
+        </p>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "410px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!--<script src="./js/style.js"></script>-->
+    <script src="./js/jquery.js"></script>
+    <script>
+      var clickItem = $('input[name="finger"]');
+      $(clickItem).click(function () {
+        console.log($(this).val());
+        if ($(this).val() === "a") {
+          $(this).attr("disabled", true);
+          $(this)
+            .siblings(".small_finger")
+            .find("img")
+            .attr("src", "./img/small_finger_closed.png");
+        }
+        if ($(this).val() === "b") {
+          $(this).attr("disabled", true);
+          $(this)
+            .siblings(".noname_finger")
+            .find("img")
+            .attr("src", "./img/noname_finger_closed.png");
+        }
+        if ($(this).val() === "c") {
+          $(this).attr("disabled", true);
+          $(this)
+            .siblings(".middle_finger")
+            .find("img")
+            .attr("src", "./img/middle_finger_closed.png");
+        }
+        if ($(this).val() === "d") {
+          $(this).attr("disabled", true);
+          $(this)
+            .siblings(".index_finger")
+            .find("img")
+            .attr("src", "./img/index_finger_closed.png");
+        }
+        if ($(this).val() === "e") {
+          $(this).attr("disabled", true);
+          $(this)
+            .siblings(".mother_finger")
+            .find("img")
+            .attr("src", "./img/mother_finger_closed.png");
+        }
+        //var checkedValues = $('input[name="finger"]:checked').val();
+        $("#press_ok_button").click(function () {
+          var selectedValues = [];
+          $('input[name="finger"]:checked').each(function () {
+            selectedValues.push($(this).val());
+          });
+
+          if (
+            selectedValues.length === 5 &&
+            selectedValues.indexOf("a") === 0
+          ) {
+            window.location.href = "italyhand.html";
+            console.log(5);
+          }
+          if (
+            selectedValues.length === 2 &&
+            selectedValues.indexOf("b") === 0
+          ) {
+            window.location.href = "iloveufinger.html";
+            console.log(2);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
