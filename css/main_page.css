@@ -95,64 +95,64 @@ span {
 .main_hand {
   position: fixed;
   bottom: 0px;
-  left: 480px;
+  left: 550px;
 }
 
 .small_finger {
   position: fixed;
   bottom: 286px;
-  left: 542px;
+  left: 612px;
   z-index: -10;
 }
 .noname_finger {
   position: fixed;
   bottom: 330px;
-  left: 670px;
+  left: 740px;
   z-index: -10;
 }
 .middle_finger {
   position: fixed;
   bottom: 364px;
-  left: 787px;
+  left: 857px;
   z-index: -10;
 }
 .index_finger {
   position: fixed;
   bottom: 370px;
-  left: 910px;
+  left: 980px;
   z-index: -10;
 }
 .mother_finger {
   position: fixed;
   bottom: 196px;
-  left: 839px;
+  left: 909px;
   z-index: -10;
 }
 
 .small_finger_button {
   position: fixed;
-  bottom: 443px;
-  left: 554px;
+  bottom: 620px;
+  left: 648px;
 }
 .noname_finger_button {
   position: fixed;
-  bottom: 562px;
-  left: 650px;
+  bottom: 782px;
+  left: 790px;
 }
 .middle_finger_button {
   position: fixed;
-  bottom: 620px;
-  left: 756px;
+  bottom: 855px;
+  left: 938px;
 }
 .index_finger_button {
   position: fixed;
-  bottom: 585px;
-  left: 866px;
+  bottom: 805px;
+  left: 1085px;
 }
 .mother_finger_button {
   position: fixed;
-  bottom: 370px;
-  left: 1034px;
+  bottom: 500px;
+  left: 1300px;
 }
 
 .reset_button {
@@ -290,26 +290,26 @@ span {
 
 .small_finger_text {
   position: fixed;
-  left: 510px;
-  top: 190px;
+  left: 630px;
+  top: 210px;
 }
 .noname_finger_text {
   position: fixed;
-  left: 620px;
-  top: 90px;
+  left: 768px;
+  top: 60px;
 }
 .middle_finger_text {
   position: fixed;
-  left: 735px;
-  top: 60px;
+  left: 925px;
+  top: 30px;
 }
 .index_finger_text {
   position: fixed;
-  right: 620px;
-  top: 110px;
+  right: 780px;
+  top: 90px;
 }
 .mother_finger_text {
   position: fixed;
-  right: 450px;
-  bottom: 425px;
+  right: 560px;
+  bottom: 580px;
 }
