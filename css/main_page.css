@@ -315,3 +315,19 @@ span {
   right: 680px;
   bottom: 590px;
 }
+
+.info_1 {
+  position: fixed;
+  left: 0px;
+  top: 270px;
+}
+.info_2 {
+  position: fixed;
+  left: 0px;
+  top: 270px;
+}
+.info_3 {
+  position: fixed;
+  left: 0px;
+  top: 270px;
+}
