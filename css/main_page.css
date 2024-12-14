@@ -100,32 +100,32 @@ span {
 
 .small_finger {
   position: fixed;
-  bottom: 211px;
-  left: 529px;
+  bottom: 286px;
+  left: 542px;
   z-index: -10;
 }
 .noname_finger {
   position: fixed;
-  bottom: 235px;
-  left: 618px;
+  bottom: 330px;
+  left: 670px;
   z-index: -10;
 }
 .middle_finger {
   position: fixed;
-  bottom: 257px;
-  left: 698px;
+  bottom: 364px;
+  left: 787px;
   z-index: -10;
 }
 .index_finger {
   position: fixed;
-  bottom: 264px;
-  left: 787px;
+  bottom: 370px;
+  left: 910px;
   z-index: -10;
 }
 .mother_finger {
   position: fixed;
-  bottom: 140px;
-  left: 733px;
+  bottom: 196px;
+  left: 839px;
   z-index: -10;
 }
 
