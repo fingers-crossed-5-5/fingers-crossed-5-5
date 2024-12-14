@@ -250,19 +250,69 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/style.js"></script>
-
+    <!-- <script src="./js/style.js"></script> -->
+    <script src="./js/jquery.js"></script>
     <script>
-      $('input[name="finger"]').click({
-        function() {
-          var chekVal = $(this).val();
-          if (chekVal == a) {
-            console.log("tiny");
+      var clickItem = $('input[name="finger"]');
+      $(clickItem).click(function () {
+        console.log($(this).val());
+        if ($(this).val() === "a") {
+          $(this).attr("disabled", true);
+          $(this)
+            .siblings(".small_finger")
+            .find("img")
+            .attr("src", "./img/small_finger_closed.png");
+        }
+        if ($(this).val() === "b") {
+          $(this).attr("disabled", true);
+          $(this)
+            .siblings(".noname_finger")
+            .find("img")
+            .attr("src", "./img/noname_finger_closed.png");
+        }
+        if ($(this).val() === "c") {
+          $(this).attr("disabled", true);
+          $(this)
+            .siblings(".middle_finger")
+            .find("img")
+            .attr("src", "./img/middle_finger_closed.png");
+        }
+        if ($(this).val() === "d") {
+          $(this).attr("disabled", true);
+          $(this)
+            .siblings(".index_finger")
+            .find("img")
+            .attr("src", "./img/index_finger_closed.png");
+        }
+        if ($(this).val() === "e") {
+          $(this).attr("disabled", true);
+          $(this)
+            .siblings(".mother_finger")
+            .find("img")
+            .attr("src", "./img/mother_finger_closed.png");
+        }
+        //var checkedValues = $('input[name="finger"]:checked').val();
+        $("#press_ok_button").click(function () {
+          var selectedValues = [];
+          $('input[name="finger"]:checked').each(function () {
+            selectedValues.push($(this).val());
+          });
+
+          if (
+            selectedValues.length === 5 &&
+            selectedValues.indexOf("a") === 0
+          ) {
+            window.location.href = "italyhand.html";
+            console.log(5);
           }
-          if (chekVal == e) {
-            console.log("finger");
+          if (
+            selectedValues.length === 2 &&
+            selectedValues.indexOf("b") === 0
+          ) {
+            window.location.href = "iloveufinger.html";
+            console.log(2);
           }
-        },
+        });
       });
     </script>
     <div class="info">
