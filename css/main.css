@@ -167,11 +167,11 @@ body {
   color: rgb(255, 0, 0);
   -webkit-text-stroke-width: 1px;
   text-shadow: 3px 3px #ffffff;
-  font-size: 48px;
+  font-size: 60px;
   text-decoration-thickness: 10px;
   background-color: rgb(46, 255, 0);
   margin: 0px 0px;
-  padding: 6px;
+  padding: 5px;
 }
 .mainpage_logo {
   width: 100%;
@@ -185,7 +185,7 @@ body {
 }
 .floating_face {
   position: relative;
-  padding: 0px 128px;
+  padding: 204px 180px;
   display: inline-block;
 }
 .face_stroke {
@@ -246,7 +246,7 @@ body {
 }
 
 .text_right {
-  font-size: 36px;
+  font-size: 40px;
   color: rgb(255, 255, 0);
   letter-spacing: 2px;
 }
@@ -258,7 +258,7 @@ body {
 .left_hand_close :hover {
   content: url(/img/hand_start_left_open.png);
   position: relative;
-  height: 720px;
+  height: 909px;
   width: auto;
   bottom: 8px;
   right: 150px;
@@ -271,7 +271,7 @@ body {
 .right_hand_close :hover {
   content: url(/img/hand_start_right_open_play.png);
   position: relative;
-  height: 720px;
+  height: 909px;
   width: auto;
   bottom: 8px;
   left: 150px;
