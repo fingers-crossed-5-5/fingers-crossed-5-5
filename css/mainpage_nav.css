@@ -1,0 +1,26 @@
+.mainpage_logo {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 40px 20px;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_option {
+  text-align: right;
+  position: absolute;
+  border-style: hidden;
+  text-decoration-style: none;
+}
+body {
+  background-image: url(../img/bg_color.png);
+}
+.mainpage_nav a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}

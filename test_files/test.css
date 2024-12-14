@@ -1,0 +1,141 @@
+.test_hand {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+.main_hand {
+  position: fixed;
+  bottom: 0px;
+  left: 480px;
+}
+
+.small_finger {
+  position: fixed;
+  bottom: 211px;
+  left: 529px;
+  z-index: -10;
+}
+.noname_finger {
+  position: fixed;
+  bottom: 235px;
+  left: 618px;
+  z-index: -10;
+}
+.middle_finger {
+  position: fixed;
+  bottom: 257px;
+  left: 698px;
+  z-index: -10;
+}
+.index_finger {
+  position: fixed;
+  bottom: 264px;
+  left: 787px;
+  z-index: -10;
+}
+.mother_finger {
+  position: fixed;
+  bottom: 140px;
+  left: 733px;
+  z-index: -10;
+}
+
+.small_finger_button {
+  position: fixed;
+  bottom: 443px;
+  left: 554px;
+}
+.noname_finger_button {
+  position: fixed;
+  bottom: 562px;
+  left: 650px;
+}
+.middle_finger_button {
+  position: fixed;
+  bottom: 620px;
+  left: 756px;
+}
+.index_finger_button {
+  position: fixed;
+  bottom: 585px;
+  left: 866px;
+}
+.mother_finger_button {
+  position: fixed;
+  bottom: 370px;
+  left: 1034px;
+}
+
+.reset_button {
+  position: fixed;
+  right: 142px;
+  bottom: 285px;
+}
+.reset_button :hover {
+  cursor: pointer;
+  content: url(/img/back_button_pressed.png);
+  width: 115px;
+  height: auto;
+}
+
+.ok_button {
+  position: fixed;
+  right: 142px;
+  bottom: 140px;
+}
+.ok_button :hover {
+  cursor: pointer;
+  content: url(/img/ok_button_pressed.png);
+  width: 260px;
+  height: auto;
+}
+
+.small_finger_button input[type="radio"] {
+  display: none;
+}
+.small_finger_button label:hover {
+  cursor: pointer;
+}
+.small_finger_button input[type="radio"]:checked ~ label {
+  display: none;
+}
+
+.noname_finger_button input[type="radio"] {
+  display: none;
+}
+.noname_finger_button label:hover {
+  cursor: pointer;
+}
+.noname_finger_button input[type="radio"]:checked ~ label {
+  display: none;
+}
+
+.middle_finger_button input[type="radio"] {
+  display: none;
+}
+.middle_finger_button label:hover {
+  cursor: pointer;
+}
+.middle_finger_button input[type="radio"]:checked ~ label {
+  display: none;
+}
+
+.index_finger_button input[type="radio"] {
+  display: none;
+}
+.index_finger_button label:hover {
+  cursor: pointer;
+}
+.index_finger_button input[type="radio"]:checked ~ label {
+  display: none;
+}
+
+.mother_finger_button input[type="radio"] {
+  display: none;
+}
+.mother_finger_button label:hover {
+  cursor: pointer;
+}
+.mother_finger_button input[type="radio"]:checked ~ label {
+  display: none;
+}

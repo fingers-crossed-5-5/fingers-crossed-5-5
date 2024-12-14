@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test_hand</title>
+    <link href="./test.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).click(function () {
+        $(":radio");
+      });
+      $(document).click(function () {
+        $(":reset");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="main_hand">
+      <img src="./img/palm.png" height="656px" width="auto" />
+    </div>
+    <form action="" id="result">
+      <div class="small_finger_button">
+        <div class="small_finger">
+          <img
+            src="./img/small_finger.png"
+            height="305x"
+            width="auto"
+            id="small_finger_picture"
+          />
+        </div>
+        <input type="radio" name="finger" value="1" id="small_finger_button" />
+        <label for="small_finger_button"
+          ><img src="./img/finger_point.png" width="26px" height="auto"
+        /></label>
+      </div>
+      <div class="noname_finger_button">
+        <div class="noname_finger">
+          <img
+            src="./img/noname_finger.png"
+            height="391px"
+            width="auto"
+            id="noname_finger_picture"
+          />
+        </div>
+        <input
+          type="radio"
+          name="finger"
+          value="10"
+          id="noname_finger_button"
+        />
+        <label for="noname_finger_button"
+          ><img src="./img/finger_point.png" width="26px" height="auto"
+        /></label>
+      </div>
+      <div class="middle_finger_button">
+        <div class="middle_finger">
+          <img
+            src="./img/middle_finger.png"
+            height="431px"
+            width="auto"
+            id="middle_finger_picture"
+          />
+        </div>
+        <input
+          type="radio"
+          name="finger"
+          value="100"
+          id="middle_finger_button"
+        />
+        <label for="middle_finger_button"
+          ><img src="./img/finger_point.png" width="26px" height="auto"
+        /></label>
+      </div>
+      <div class="index_finger_button">
+        <div class="index_finger">
+          <img
+            src="./img/index_finger.png"
+            height="386px"
+            width="auto"
+            id="index_finger_picture"
+          />
+        </div>
+        <input
+          type="radio"
+          name="finger"
+          value="1000"
+          id="index_finger_button"
+        />
+        <label for="index_finger_button"
+          ><img src="./img/finger_point.png" width="26px" height="auto"
+        /></label>
+      </div>
+      <div class="mother_finger_button">
+        <div class="mother_finger">
+          <img
+            src="./img/mother_finger.png"
+            height="285px"
+            width="auto"
+            id="mother_finger_picture"
+          />
+        </div>
+        <input
+          type="radio"
+          name="finger"
+          value="10000"
+          id="mother_finger_button"
+        />
+        <label for="mother_finger_button"
+          ><img src="./img/finger_point.png" width="26px" height="auto"
+        /></label>
+      </div>
+      <div class="reset_button">
+        <button
+          style="display: none"
+          id="press_reset_button"
+          onclick="window.location.href='main_page.html';"
+        >
+          Reset
+        </button>
+        <label for="press_reset_button">
+          <img
+            src="./img/back_button_unpressed.png"
+            width="115px"
+            height="auto"
+            alt="Back to Main Page"
+          />
+        </label>
+      </div>
+      <div class="ok_button">
+        <input type="submit" style="display: none" id="press_ok_button" />
+        <label for="press_ok_button"
+          ><img src="./img/ok_button_unpressed.png" width="260px" height="auto"
+        /></label>
+      </div>
+    </form>
+    <script src="./test.js"></script>
+  </body>
+</html>

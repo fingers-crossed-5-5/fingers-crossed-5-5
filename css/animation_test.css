@@ -1,0 +1,80 @@
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  /* border-radius: 50%;*/
+  /*animation: colorChange 2s infinite;*/
+}
+/*同一個樣式，只設定動畫延遲秒數，可以多寫class控制*/
+.c02 {
+  animation-delay: 0.2s;
+}
+.c03 {
+  animation-delay: 0.4s;
+}
+.c04 {
+  animation-delay: 0.6s;
+}
+.c05 {
+  animation-delay: 0.8s;
+}
+.c06 {
+  animation-delay: 1s;
+}
+.c07 {
+  animation-delay: 1.2s;
+}
+.c08 {
+  animation-delay: 1.4s;
+}
+.red_square {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+/*圖片做動畫的話最佳使用方式是寫成背景*/
+.img_animation {
+  width: 150px;
+  height: 150px;
+  background-image: url(../img/animation.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*position有三種主要使用語法
+1.fixed=>通常用在固定於畫面某處，ex:gotop btn/nav
+2.relative/absolute=>通常一起使用，relative為基準點，absolute根據relative的位置對應top/left/bottom/right的設定
+*/
+.outFrame {
+  width: 100px;
+  height: 100px;
+  border: solid 1px #000000;
+  position: relative;
+}
+.innerFrame {
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/animation.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  left: 80px;
+  top: 60px;
+}
+/*css動畫邏輯
+1.先寫動畫
+2.寫到要套用動畫的tag上
+*/
+@keyframes colorChange {
+  0% {
+    background-color: #000000;
+  }
+  50% {
+    background-color: #ffffff;
+    scale: 1.5;
+  }
+  100% {
+    background-color: #000000;
+  }
+}

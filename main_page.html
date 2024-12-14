@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./img/finger_icon.png" rel="icon" />
+    <link href="./css/main_page.css" rel="stylesheet" />
+    <title>意有所指</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="mainpage_nav" href="./main.html"
+          ><img
+            src="./img/mainlogo.png"
+            width="240px"
+            height="auto"
+            margin="20px"
+            padding="20px"
+        /></a>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="./main.html"
+            ><div class="main">
+              <img src="./img/Home.png" width="auto" height="30px" />
+            </div>
+            <img
+              src="./img/pointing_finger.png"
+              width="300px"
+              height="auto"
+              class="pointing_finger"
+          /></a>
+          <a href="./aboutus_profile.html"
+            ><div class="aboutus">
+              <img src="./img/About_us.png" width="auto" height="30px" />
+            </div>
+            <img
+              src="./img/pointing_finger.png"
+              width="300px"
+              height="auto"
+              class="pointing_finger"
+          /></a>
+        </div>
+        <div class="openNav">
+          <span style="font-size: 50px; cursor: pointer" onclick="openNav()"
+            >&#9776;
+          </span>
+        </div>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./main.html"
+                  >首頁</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus_profile.html">關於我們</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main_hand">
+      <img src="./img/palm.png" height="656px" width="auto" />
+    </div>
+    <form action="">
+      <div class="small_finger_button">
+        <div class="small_finger">
+          <img
+            src="./img/small_finger.png"
+            height="305x"
+            width="auto"
+            id="small_finger_picture"
+          />
+        </div>
+        <input
+          type="checkbox"
+          name="finger"
+          value="a"
+          id="small_finger_button"
+        />
+        <label for="small_finger_button"
+          ><img src="./img/finger_point.png" width="26px" height="auto"
+        /></label>
+      </div>
+      <div class="noname_finger_button">
+        <div class="noname_finger">
+          <img
+            src="./img/noname_finger.png"
+            height="391px"
+            width="auto"
+            id="noname_finger_picture"
+          />
+        </div>
+        <input
+          type="checkbox"
+          name="finger"
+          value="b"
+          id="noname_finger_button"
+        />
+        <label for="noname_finger_button"
+          ><img src="./img/finger_point.png" width="26px" height="auto"
+        /></label>
+      </div>
+      <div class="middle_finger_button">
+        <div class="middle_finger">
+          <img
+            src="./img/middle_finger.png"
+            height="431px"
+            width="auto"
+            id="middle_finger_picture"
+          />
+        </div>
+        <input
+          type="checkbox"
+          name="finger"
+          value="c"
+          id="middle_finger_button"
+        />
+        <label for="middle_finger_button"
+          ><img src="./img/finger_point.png" width="26px" height="auto"
+        /></label>
+      </div>
+      <div class="index_finger_button">
+        <div class="index_finger">
+          <img
+            src="./img/index_finger.png"
+            height="386px"
+            width="auto"
+            id="index_finger_picture"
+          />
+        </div>
+        <input
+          type="checkbox"
+          name="finger"
+          value="d"
+          id="index_finger_button"
+        />
+        <label for="index_finger_button"
+          ><img src="./img/finger_point.png" width="26px" height="auto"
+        /></label>
+      </div>
+      <div class="mother_finger_button">
+        <div class="mother_finger">
+          <img
+            src="./img/mother_finger.png"
+            height="285px"
+            width="auto"
+            id="mother_finger_picture"
+          />
+        </div>
+        <input
+          type="checkbox"
+          name="finger"
+          value="e"
+          id="mother_finger_button"
+        />
+        <label for="mother_finger_button"
+          ><img src="./img/finger_point.png" width="26px" height="auto"
+        /></label>
+      </div>
+      <div class="reset_button">
+        <button
+          style="display: none"
+          id="press_reset_button"
+          onclick="window.location.href='main_page.html';"
+        >
+          Reset
+        </button>
+        <label for="press_reset_button">
+          <img
+            src="./img/back_button_unpressed.png"
+            width="115px"
+            height="auto"
+            alt="Back to Main Page"
+          />
+        </label>
+      </div>
+
+      <div class="ok_button">
+        <input type="submit" style="display: none" id="press_ok_button" />
+        <label for="press_ok_button"
+          ><img src="./img/ok_button_unpressed.png" width="260px" height="auto"
+        /></label>
+      </div>
+    </form>
+    <div class="small_finger_text">
+      <img src="./img/small_finger_text.png" width="60px" height="auto" />
+    </div>
+    <div class="noname_finger_text">
+      <img src="./img/noname_finger_text.png" width="60px" height="auto" />
+    </div>
+    <div class="middle_finger_text">
+      <img src="./img/middle_finger_text.png" width="60px" height="auto" />
+    </div>
+    <div class="index_finger_text">
+      <img src="./img/index_finger_text.png" width="60px" height="auto" />
+    </div>
+    <div class="mother_finger_text">
+      <img src="./img/mother_finger_text.png" width="60px" height="auto" />
+    </div>
+    <div class="running_text_container">
+      <div class="running_text">
+        <p class="text_chinese">
+          手勢的含義隨著文化背景不同而變化。如果身處陌生的地方，建議觀察當地人如何使用手勢，避免因文化差異產生誤會。
+        </p>
+      </div>
+      <div class="running_text2">
+        <p class="text_chinese">
+          手勢的含義隨著文化背景不同而變化。如果身處陌生的地方，建議觀察當地人如何使用手勢，避免因文化差異產生誤會。
+        </p>
+      </div>
+      <div class="running_text3">
+        <p class="text_chinese">
+          手勢的含義隨著文化背景不同而變化。如果身處陌生的地方，建議觀察當地人如何使用手勢，避免因文化差異產生誤會。
+        </p>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "410px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="./js/style.js"></script> -->
+
+    <script>
+      $('input[name="finger"]').click({
+        function() {
+          var chekVal = $(this).val();
+          if (chekVal == a) {
+            console.log("tiny");
+          }
+          if (chekVal == e) {
+            console.log("finger");
+          }
+        },
+      });
+    </script>
+  </body>
+</html>

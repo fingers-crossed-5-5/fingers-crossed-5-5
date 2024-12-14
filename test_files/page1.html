@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Button Navigation</title>
+    <script>
+      const navigateBasedOnRadios = (event) => {
+        event.preventDefault(); // Prevent default form submission behavior
+
+        // Capture selected values from all radio groups
+        const selectedValues = [];
+        const radioIds = [
+          "small_finger_button",
+          "noname_finger_button",
+          "middle_finger_button",
+          "index_finger_button",
+          "mother_finger_button",
+        ];
+
+        radioIds.forEach((id) => {
+          const selectedRadio = document.querySelector(`#${id}:checked`);
+          if (selectedRadio) {
+            selectedValues.push(selectedRadio.value);
+          } else {
+            selectedValues.push(null); // If no selection is made for a group
+          }
+        });
+
+        // Define navigation rules
+        const navigationRules = {
+          // Example combinations:
+          "option1-option2": "page1.html",
+          "option1-option2-option3": "page2.html",
+          "option1-option2-option3-option4": "page3.html",
+          // Add other combinations and their respective page URLs
+          "null-null-null-null-null": "defaultPage.html", // Page when no selection is made
+        };
+
+        // Build the key for navigation based on user selections
+        const key = selectedValues.join("-");
+
+        // Redirect if a matching key is found
+        if (navigationRules[key]) {
+          window.location.href = navigationRules[key];
+        } else {
+          alert("No matching page for the selected combination.");
+        }
+      };
+
+      // Attach event listener to the form to trigger navigation
+      document.addEventListener("DOMContentLoaded", () => {
+        document
+          .getElementById("navigationForm")
+          .addEventListener("submit", navigateBasedOnRadios);
+      });
+    </script>
+  </head>
+  <body>
+    <form id="navigationForm">
+      <h2>Select Your Options</h2>
+
+      <input type="radio" id="small_finger_button" value="option1" />Option 1<br />
+      <input type="radio" id="noname_finger_button" value="option2" />Option
+      2<br />
+
+      <input type="radio" id="middle_finger_button" value="option3" />Option
+      3<br />
+      <input type="radio" id="index_finger_button" value="option4" />Option 4<br />
+
+      <input type="radio" id="mother_finger_button" value="option5" />Option
+      5<br />
+      <input type="radio" id="other_finger_button" value="option6" />Option 6<br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>意有所指</title>
+    <link href="./img/頁籤icon指.png" rel="icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="./css/_variables.scss" rel="stylesheet" />
+    <link href="./css/thumbfingerdesc.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/reset.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="mainpage_nav" href="./main.html"
+          ><img
+            src="./img/mainlogo.png"
+            width="120px"
+            height="auto"
+            margin="20px"
+            padding="20px"
+        /></a>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="./main.html"
+            ><div class="main">
+              <img src="./img/Home.png" width="auto" height="30px" />
+            </div>
+            <img
+              src="./img/pointing_finger.png"
+              width="300px"
+              height="auto"
+              class="pointing_finger"
+          /></a>
+          <a href="./aboutus_profile.html"
+            ><div class="aboutus">
+              <img src="./img/About_us.png" width="auto" height="30px" />
+            </div>
+            <img
+              src="./img/pointing_finger.png"
+              width="300px"
+              height="auto"
+              class="pointing_finger"
+          /></a>
+        </div>
+        <div class="openNav">
+          <span style="font-size: 50px; cursor: pointer" onclick="openNav()"
+            >&#9776;
+          </span>
+        </div>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">關於我們</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="hand_category">
+      <div class="deco_bg_left">
+        <img src="./img/素材/thumbfinger/des_green_left.png" width="700px" />
+      </div>
+      <div class="displaypose">
+        <img src="./img/手勢插畫/thumbfinger/main.png" width="650px" />
+      </div>
+      <div class="deco_bg_right">
+        <img src="./img/素材/thumbfinger/des_green_right.png" width="700px" />
+      </div>
+    </div>
+    <div class="greenbar"></div>
+    <!--------------------->
+    <div class="firsthand">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 col-lg-5">
+            <div class="first_des_title">
+              <div class="noto-sans-tc"><h1>比讚手勢</h1></div>
+            </div>
+          </div>
+          <div class="col-md-2 col-lg-2">
+            <p class="first_des_area"><span>義大利、中東地區</span></p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-4 col-lg-4">
+            <div class="first_des_subtitle">
+              <div class="noto-sans-tc"><h2>Thumbs Up</h2></div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-7">
+            <div class="first_paragraph">
+              <p class="noto-sans-tc">
+                拇指向上的手勢，華語地區民間也稱作「豎大拇哥」、「翹大拇指」、「頂呱呱」等，這個手勢在Facebook、微博等社交網站或軟體可表達讚好、誇讚。
+                拇指向上的手勢表達友好。<br />
+                <br />在意大利、希臘以及中東國家（如伊朗、伊拉克和阿富汗等），大拇指朝下是一種具有強烈否定含義的手勢，通常用來表示「不好」或「很爛」。在這些地區，該手勢常帶有不滿、輕視或鄙夷的情緒，甚至在某些情況下可被視為一種侮辱。在跨文化交流中，對這一手勢的解讀可能會因文化背景的不同而引發誤會。
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <div class="first_des_illu">
+              <img
+                src="./img/手勢插畫/thumbfinger/goodbad.png"
+                width="700px"
+                height="auto"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="first_des_icon">
+          <img
+            src="./img/手勢插畫/thumbfinger/bgdeco.png"
+            width="400px"
+            height="auto"
+            class="rotate"
+          />
+        </div>
+      </div>
+    </div>
+    <!--------------------->
+    <div class="secondhand py-5">
+      <div class="container">
+        <div class="row align-items-center mb-4">
+          <div class="offset-5 col-md-5 col-lg-5">
+            <div class="second_des_title">
+              <h2 class="noto-sans-tc">比讚手勢</h2>
+            </div>
+          </div>
+          <div class="col-md-2 col-lg-2">
+            <p class="second_des_area">
+              <span>羅馬、地中海國家</span>
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="offset-5 col-md-4 col-lg-4">
+            <div class="second_des_subtitle">
+              <div class="noto-sans-tc"><h2>Thumbs Up</h2></div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-4 col-lg-4">
+            <div class="second_des_illu">
+              <img
+                src="./img/手勢插畫/thumbfinger/warthumb.png"
+                width="800px"
+              />
+            </div>
+          </div>
+          <div class="offset-1 col-md-7 col-lg-7">
+            <div class="second_paragraph">
+              <p class="noto-sans-tc">
+                我想很多人都看過一部經典的電影——神鬼戰士（Gladiator），在這部電影裡面都有這樣的畫面，就是當決鬥結束之後，國王的拇指朝下，就意味著這一個鬥士要被殺掉，國王賜他死，但是如果拇指朝上的話呢，就是讓這個鬥士活下來。大拇指朝下的手勢在歷史上可追溯至古羅馬時期，當時這一手勢被用於競技場中，觀眾通過豎起或朝下大拇指來決定角鬥士的生死。<br />
+                <br />可是你知道嗎？如果把時代還原回古羅馬，大拇指向上跟向下的意義其實是跟我們現代的認知是完全相反的，如果是在古羅馬到了競技的尾聲，一但觀戰的國王竪起了大拇指，那絕對不是要給這些鬥士點個讚，而是要讓這些人「領便當」，就是要讓這些人被殺掉了。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------->
+    <div class="thirdhand">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-lg-6">
+            <div class="third_des_title">
+              <div class="noto-sans-tc"><h3>無花果拇指</h3></div>
+            </div>
+          </div>
+          <div class="col-md-2 col-lg-2">
+            <p class="third_des_area"><span>土耳其、地中海</span></p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-7">
+            <div class="third_des_subtitle">
+              <div class="noto-sans-tc"><h3>I Got Your Nose、fig sing</h3></div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-7">
+            <div class="third_paragraph">
+              <p class="noto-sans-tc">
+                在土耳其，「I got your
+                nose」這個手勢在北美則是一個受歡迎的親子遊戲，孩子們會用食指和中指夾住鼻子，隨後迅速地將拇指夾在這兩個手指的中間，並說「I
+                got your
+                nose」，表示「我拿走你的鼻子了」。這個遊戲通常是無害的，主要用於增強親子關係，特別是在遊玩和享受時光的過程中。<br />
+                <br />「Fig sign」是一個程度較輕的下流手勢。在古羅馬時期，fig
+                手勢與生殖崇拜有關，象徵女性生殖器。在中世紀的歐洲，fig
+                手勢開始被用作一種侮辱或挑釁的手勢，它通常代表性的侮辱。在義大利、葡萄牙和巴西等地，fig
+                手勢有時被用作驅邪的象徵，特別是用來防止“邪眼”
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <div class="third_des_illu">
+              <img
+                src="./img/手勢插畫/thumbfinger/igotnose.png"
+                width="700px"
+                height="auto"
+              />
+            </div>
+          </div>
+          <div class="third_des_icon">
+            <img
+              src="./img/手勢插畫/thumbfinger/main.png"
+              width="180px"
+              height="auto"
+              class="rotate"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------->
+    <footer class="mainpage_footer">
+      <a class="footer_logo" href="#">
+        <img src="./img/mainlogo.png" alt="Main Logo" class="footer_logo_img" />
+      </a>
+      <a class="playagain" href="#">
+        <img
+          src="./img/素材/playagain.png"
+          class="pl_ag_button"
+          width="300px"
+          height="auto"
+          margin-right="40px"
+          padding="20px"
+        />
+      </a>
+    </footer>
+    <!--------------->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "410px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,360 @@
+.hand_category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  height: 650px;
+  overflow: hidden; /* 隱藏溢出 */
+  width: 100%;
+  object-fit: cover; /* 保持比例，填滿容器 */
+  margin-top: 80px;
+}
+.deco_bg_left {
+  left: 0px;
+  height: auto;
+  width: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.deco_bg_right {
+  right: 0px;
+  height: auto;
+  width: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.greenbar {
+  background-color: #a2ff60;
+  width: 1920;
+  height: 50px;
+  margin-top: -10px;
+  margin-bottom: 100px;
+  padding: 0px;
+}
+.mainpage_logo {
+  width: 100%;
+  position: fixed;
+}
+.mainpage_nav {
+  margin-left: 80px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.container-fluid {
+  background-image: url(../img/navbar.jpg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0px;
+  padding: 0px;
+}
+.navbar {
+  padding: 0px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.main {
+  margin-top: 100px;
+  margin-left: -75px;
+  position: fixed;
+  top: 100px;
+}
+
+.aboutus {
+  margin-top: 100px;
+  margin-left: -100px;
+  position: fixed;
+  top: 300px;
+}
+.sidenav a img {
+  margin-top: 20px;
+  margin-left: 115px;
+}
+.pointing_finger {
+  rotate: 30deg;
+}
+.pointing_finger:hover {
+  rotate: 0deg;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+.main {
+  margin-top: 100px;
+  margin-left: -75px;
+  position: fixed;
+  top: 100px;
+}
+
+.aboutus {
+  margin-top: 100px;
+  margin-left: -100px;
+  position: fixed;
+  top: 300px;
+}
+.sidenav a img {
+  margin-top: 20px;
+  margin-left: 115px;
+}
+.pointing_finger {
+  rotate: 30deg;
+}
+.pointing_finger:hover {
+  rotate: 0deg;
+}
+.openNav {
+  margin-right: 80px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.sidenav a:hover {
+  color: #ff00a4;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  font-size: 50px;
+  margin-left: 60px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+body {
+  color: #ff00a4;
+  background-color: #ff7106;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none #ff0900;
+}
+.noto-sans-tc {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.firsthand {
+  margin-bottom: 100px;
+}
+.first_des_title {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 110px;
+  font-weight: 900;
+  color: #a2ff60;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: -10px;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.first_des_subtitle {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  color: #a2ff60;
+  margin-bottom: 20px;
+}
+.first_des_area {
+  background-color: #a2ff60;
+  margin-left: -50px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #ff7106;
+}
+.first_paragraph {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #a2ff60;
+  margin-top: -280px;
+}
+.first_des_illu {
+  width: 700px;
+  left: 0px;
+  margin-top: -200px;
+}
+.first_des_icon {
+  margin-top: -250px;
+}
+.deco_middle {
+  width: 100%; /* 確保父容器的寬度 */
+  height: auto; /* 自動調整高度 */
+}
+.splashicon {
+  display: flex; /* 使用 Flexbox 排列 */
+  justify-content: flex-end; /* 將內容靠右對齊 */
+  gap: 20px; /* 圖片之間的間距 */
+}
+.splash_right {
+  position: absolute; /* 絕對定位 */
+  right: 0; /* 緊貼容器右邊 */
+  top: 50%; /* 垂直居中 */
+  transform: translateY(-50%); /* 修正居中的位置 */
+}
+.secondhand {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.second_des_illu {
+  width: 700px;
+  right: 0px;
+  margin-top: -300px;
+  margin-left: -200px;
+}
+.second_des_title {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 110px;
+  font-weight: 900;
+  color: #a2ff60;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: px;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.second_des_subtitle {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  color: #a2ff60;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+.second_des_area {
+  background-color: #a2ff60;
+  margin-left: -50px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #ff7106;
+}
+.second_paragraph {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #a2ff60;
+  margin-top: -180px;
+}
+.thirdhand {
+  margin-bottom: 200px;
+}
+.third_des_title {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 110px;
+  font-weight: 900;
+  color: #a2ff60;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.third_des_subtitle {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  color: #a2ff60;
+  margin-bottom: 20px;
+}
+.third_des_area {
+  background-color: #a2ff60;
+  margin-left: -50px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #ff7106;
+}
+.third_paragraph {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #a2ff60;
+  margin-top: -200px;
+}
+.third_des_illu {
+  width: 700px;
+  left: 0px;
+  margin-top: -350px;
+}
+.third_des_icon {
+  margin-top: -250px;
+}
+.mainpage_footer {
+  margin-top: 100px;
+}
+.mainpage_footer {
+  background-image: url(../img/footer.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between; /* 將內容分布在兩邊 */
+  align-items: center; /* 確保 Logo 和 PlayAgain 圖片垂直對齊 */
+  padding: 20px; /* 添加適當的內邊距 */
+}
+.footer_logo_img {
+  width: 300px;
+  height: auto;
+  display: inline-block;
+  margin: 50px;
+  margin-left: 80px;
+}
+.pl_ag_button {
+  height: auto;
+  margin: 50px;
+  display: inline-block;
+  margin-right: 40px;
+}
+.playagain {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+.rotate_right {
+  display: inline-block;
+  transition: transform 0.3s ease; /* 添加過渡效果 */
+  transform: rotate(45deg);
+}
+.rotate_left {
+  display: inline-block;
+  transition: transform 0.3s ease; /* 添加過渡效果 */
+  transform: rotate(-45deg);
+}
+/* 鼠標懸停旋轉 */
+.rotate_right:hover {
+  transform: rotate(-20deg);
+}
+.rotate_left:hover {
+  transform: rotate(20deg);
+}

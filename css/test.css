@@ -1,0 +1,36 @@
+.test_hand {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+.main_hand {
+  position: fixed;
+  bottom: 0px;
+  left: 480px;
+}
+.small_finger {
+  position: fixed;
+  bottom: 300px;
+  left: 519px;
+}
+
+.noname_finger {
+  position: fixed;
+  bottom: 359px;
+  left: 625px;
+}
+.middle_finger {
+  position: fixed;
+  bottom: 394px;
+  left: 720px;
+}
+.index_finger {
+  position: fixed;
+  bottom: 367px;
+  left: 802px;
+}
+.mother_finger {
+  position: fixed;
+  bottom: 131px;
+  left: 880px;
+}

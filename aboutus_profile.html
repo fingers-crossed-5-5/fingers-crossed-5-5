@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>意有所指</title>
+    <link href="./img/頁籤icon指.png" rel="icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="./css/_variables.scss" rel="stylesheet" />
+    <link href="./css/aboutus_profile.css" rel="stylesheet" />
+    <link href="./css/reset.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="mainpage_nav" href="./main.html">
+          <img
+            src="./img/mainlogo.png"
+            width="120px"
+            height="auto"
+            margin="20px"
+            padding="20px"
+            alt="Main Logo"
+          />
+        </a>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="./main.html"
+            ><div class="main">
+              <img src="./img/Home.png" width="auto" height="30px" />
+            </div>
+            <img
+              src="./img/pointing_finger.png"
+              width="300px"
+              height="auto"
+              class="pointing_finger"
+          /></a>
+          <a href="./aboutus_profile.html"
+            ><div class="aboutus">
+              <img src="./img/About_us.png" width="auto" height="30px" />
+            </div>
+            <img
+              src="./img/pointing_finger.png"
+              width="300px"
+              height="auto"
+              class="pointing_finger"
+          /></a>
+        </div>
+        <div class="openNav">
+          <span style="font-size: 50px; cursor: pointer" onclick="openNav()">
+            &#9776;
+          </span>
+        </div>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">關於我們</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="bg_img">
+      <img src="./img/banner_bg.JPG" class="img-fluid" width="1920px" height="1080px" alt="About Banner" />
+    </div>
+    
+    <div class="about_member">
+      <!-- 名稱列表 -->
+      <div class="member_display">
+        <div class="row justify-content-center mt-4">
+          <!-- 卡片組 -->
+          <div class="card-group d-flex flex-wrap">
+            <!-- Card 1 -->
+            <div class="member_card">
+              <img
+                src="./img/形象照/cody_形象.JPG"
+                class="card-img-top"
+                width="300px"
+                alt="Cody"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  <a href="#" data-img="./img/des_cody.JPG">黃榮得</a>
+                </h5>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="member_card">
+              <img
+                src="./img/形象照/jo_形象.JPG"
+                class="card-img-top"
+                width="300px"
+                alt="Jo"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  <a href="#" data-img="./img/des_jo.JPG">何恩琪</a>
+                </h5>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="member_card">
+              <img
+                src="./img/形象照/sx_形象.JPG"
+                class="card-img-top"
+                width="300px"
+                alt="SX"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  <a href="#" data-img="./img/des_sx.JPG">陳思瑄</a>
+                </h5>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="member_card">
+              <img
+                src="./img/形象照/yz_形象.JPG"
+                class="card-img-top"
+                width="300px"
+                alt="YZ"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  <a href="#" data-img="./img/des_yz.JPG">彭怡蓁</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="display-area">
+        <img
+          src="./img/des_cody.JPG"
+          width="1920px"
+          height="1920px"
+          id="displayImage"
+          alt="Display Image"
+        />
+      </div>
+    </div>
+    
+    <footer class="mainpage_footer">
+      <a class="footer_logo" href="#">
+        <img
+          src="./img/mainlogo.png"
+          alt="Main Logo"
+          class="footer_logo_img"
+        />
+      </a>
+    </footer>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll(".card-title a"); // 卡片中的名稱連結
+        const displayImage = document.getElementById("displayImage"); // 下方圖片顯示區域
+
+        links.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const imgSrc = link.getAttribute("data-img"); // 獲取圖片路徑
+
+            // 切換下方顯示圖片
+            displayImage.style.opacity = "0"; // 淡出效果
+            setTimeout(() => {
+              displayImage.src = imgSrc; // 更新圖片路徑
+              displayImage.style.opacity = "1"; // 淡入效果
+            }, 300);
+
+            // 更新 Active 狀態（可選，若需高亮）
+            links.forEach((l) => l.classList.remove("active"));
+            link.classList.add("active");
+          });
+        });
+      });
+    </script>
+     <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "410px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".card-title a");
+  const displayedImage = document.getElementById("displayedImage"); // 預設圖片的容器
+
+  links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      const imgSrc = link.getAttribute("data-img");
+      displayedImage.src = imgSrc; // 更新圖片路徑
+    });
+  });
+});
+</script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
