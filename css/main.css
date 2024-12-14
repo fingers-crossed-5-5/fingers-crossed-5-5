@@ -187,8 +187,8 @@ body {
   position: relative;
   padding: 204px 180px;
   display: inline-block;
-  top: -100px;
-  left: 120px;
+  top: -150px;
+  left: 80px;
 }
 .face_stroke {
   animation: spinning 10s linear infinite;
