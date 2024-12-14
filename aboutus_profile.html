@@ -28,7 +28,9 @@
           />
         </a>
         <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
           <a href="./index.html"
             ><div class="main">
               <img src="./img/Home.png" width="auto" height="30px" />
@@ -74,11 +76,17 @@
         </div>
       </div>
     </nav>
-    
+
     <div class="bg_img">
-      <img src="./img/banner_bg.JPG" class="img-fluid" width="1920px" height="1080px" alt="About Banner" />
+      <img
+        src="./img/banner_bg.JPG"
+        class="img-fluid"
+        width="100%"
+        height="auto"
+        alt="About Banner"
+      />
     </div>
-    
+
     <div class="about_member">
       <!-- 名稱列表 -->
       <div class="member_display">
@@ -147,24 +155,20 @@
       <div class="display-area">
         <img
           src="./img/des_cody.JPG"
-          width="1920px"
-          height="1920px"
+          width="100%"
+          height="auto"
           id="displayImage"
           alt="Display Image"
         />
       </div>
     </div>
-    
+
     <footer class="mainpage_footer">
-      <a class="footer_logo" href="#">
-        <img
-          src="./img/mainlogo.png"
-          alt="Main Logo"
-          class="footer_logo_img"
-        />
+      <a class="footer_logo" href="./index.html">
+        <img src="./img/mainlogo.png" alt="Main Logo" class="footer_logo_img" />
       </a>
     </footer>
-    
+
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const links = document.querySelectorAll(".card-title a"); // 卡片中的名稱連結
@@ -189,7 +193,7 @@
         });
       });
     </script>
-     <script>
+    <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "410px";
       }
@@ -199,21 +203,22 @@
       }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll(".card-title a");
-  const displayedImage = document.getElementById("displayedImage"); // 預設圖片的容器
+  </body>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll(".card-title a");
+        const displayedImage = document.getElementById("displayedImage"); // 預設圖片的容器
 
-  links.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-      const imgSrc = link.getAttribute("data-img");
-      displayedImage.src = imgSrc; // 更新圖片路徑
-    });
-  });
-});
-</script>
+        links.forEach((link) => {
+          link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const imgSrc = link.getAttribute("data-img");
+            displayedImage.src = imgSrc; // 更新圖片路徑
+          });
+        });
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
