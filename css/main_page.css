@@ -305,11 +305,11 @@ span {
 }
 .index_finger_text {
   position: fixed;
-  right: 780px;
-  top: 90px;
+  right: 900px;
+  top: 120px;
 }
 .mother_finger_text {
   position: fixed;
-  right: 560px;
-  bottom: 580px;
+  right: 700px;
+  bottom: 590px;
 }
