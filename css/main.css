@@ -18,7 +18,7 @@ body {
     #f8fc00,
     #0eff86
   );
-  height: 1074px;
+  height: 1090px;
   width: 257px;
   display: inline-block;
   position: fixed;
@@ -49,7 +49,7 @@ body {
 
 @keyframes scrolling {
   0% {
-    transform: translateY(-1080px);
+    transform: translateY(-1500px);
   }
   100% {
     transform: translateY(1080px);
