@@ -299,6 +299,7 @@
         //var checkedValues = $('input[name="finger"]:checked').val();
         $("#press_ok_button").click(function () {
           var selectedValues = [];
+          //var selectedValues = 0;//
           $('input[name="finger"]:checked').each(function () {
             selectedValues.push($(this).val());
           });
