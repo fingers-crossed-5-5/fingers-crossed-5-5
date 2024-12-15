@@ -302,3 +302,54 @@ body {
   margin: 50px;
   margin-left: 80px;
 }
+
+/* 廣告彈窗樣式 */
+.ad-popup {
+  position: fixed; /* 支援動態定位 */
+  width: 260px;
+  height: 260px;
+  z-index: 1000;
+  display: none; /* 預設隱藏 */
+  transition: top 0.3s ease, left 0.3s ease; /* 平滑移動效果 */
+}
+
+/* 廣告內容 */
+.ad-content {
+  position: relative;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 廣告圖片 */
+#ad-image {
+  max-width: 240px;
+  max-height: auto;
+}
+
+/* 關閉按鈕 */
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ff0000;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ad-popup {
+  animation: fade-in 0.5s ease-in-out;
+}
