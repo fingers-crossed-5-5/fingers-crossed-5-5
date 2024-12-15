@@ -1,0 +1,35 @@
+.img {
+  width: 100%;
+  height: auto;
+}
+.mainpage_footer {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between; /* 將內容分布在兩邊 */
+  align-items: center; /* 確保 Logo 和 PlayAgain 圖片垂直對齊 */
+  padding: 20px; /* 添加適當的內邊距 */
+  bottom: 100px;
+  position: fixed;
+}
+.footer_logo_img {
+  width: 300px;
+  height: auto;
+  display: inline-block;
+  margin: 50px;
+  margin-left: 80px;
+}
+.pl_ag_button {
+  height: auto;
+  margin: 50px;
+  display: inline-block;
+  margin-right: 40px;
+}
+.playagain {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}

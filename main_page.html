@@ -302,15 +302,16 @@
           $('input[name="finger"]:checked').each(function () {
             selectedValues.push($(this).val());
           });
-
-          if (
+          if (selectedValues.length === 0) {
+            window.location.href = "0finger.html";
+            console.log(0);
+          } else if (
             selectedValues.length === 1 &&
             selectedValues.indexOf("e") === 0
           ) {
             window.location.href = "4finger.html";
             console.log(1);
-          }
-          if (
+          } else if (
             selectedValues.length === 3 &&
             selectedValues.indexOf("b") == 0 &&
             selectedValues.indexOf("c") == 1 &&
@@ -318,8 +319,7 @@
           ) {
             window.location.href = "666finger.html";
             console.log(3);
-          }
-          if (
+          } else if (
             selectedValues.length === 3 &&
             selectedValues.indexOf("a") === 0 &&
             selectedValues.indexOf("b") === 1 &&
@@ -327,16 +327,14 @@
           ) {
             window.location.href = "aimfinger.html";
             console.log(3);
-          }
-          if (
+          } else if (
             selectedValues.length === 2 &&
             selectedValues.indexOf("b") === 0 &&
             selectedValues.indexOf("c") === 1
           ) {
             window.location.href = "iloveufinger.html";
             console.log(2);
-          }
-          if (
+          } else if (
             selectedValues.length === 5 &&
             selectedValues.indexOf("a") === 0 &&
             selectedValues.indexOf("b") === 1 &&
@@ -346,8 +344,7 @@
           ) {
             window.location.href = "italyhand.html";
             console.log(5);
-          }
-          if (
+          } else if (
             selectedValues.length === 4 &&
             selectedValues.indexOf("a") === 0 &&
             selectedValues.indexOf("b") === 1 &&
@@ -356,16 +353,14 @@
           ) {
             window.location.href = "middlefinger.html";
             console.log(3);
-          }
-          if (
+          } else if (
             selectedValues.length === 2 &&
             selectedValues.indexOf("d") === 0 &&
             selectedValues.indexOf("e") === 1
           ) {
             window.location.href = "okfinger.html";
             console.log(3);
-          }
-          if (
+          } else if (
             selectedValues.length === 3 &&
             selectedValues.indexOf("a") === 0 &&
             selectedValues.indexOf("b") === 1 &&
@@ -373,8 +368,7 @@
           ) {
             window.location.href = "peacefinger.html";
             console.log(3);
-          }
-          if (
+          } else if (
             selectedValues.length === 4 &&
             selectedValues.indexOf("a") === 0 &&
             selectedValues.indexOf("b") === 1 &&
@@ -383,8 +377,7 @@
           ) {
             window.location.href = "pointfinger.html";
             console.log(4);
-          }
-          if (
+          } else if (
             selectedValues.length === 4 &&
             selectedValues.indexOf("b") === 0 &&
             selectedValues.indexOf("c") === 1 &&
@@ -393,8 +386,7 @@
           ) {
             window.location.href = "promisefinger.html";
             console.log(4);
-          }
-          if (
+          } else if (
             selectedValues.length === 3 &&
             selectedValues.indexOf("b") === 0 &&
             selectedValues.indexOf("c") === 1 &&
@@ -402,24 +394,21 @@
           ) {
             window.location.href = "rockfinger.html";
             console.log(3);
-          }
-          if (
+          } else if (
             selectedValues.length === 2 &&
             selectedValues.indexOf("a") === 0 &&
             selectedValues.indexOf("e") === 1
           ) {
             window.location.href = "salutefinger.html";
             console.log(2);
-          }
-          if (
+          } else if (
             selectedValues.length === 2 &&
             selectedValues.indexOf("b") === 0 &&
             selectedValues.indexOf("e") === 1
           ) {
             window.location.href = "sunfinger.html";
             console.log(2);
-          }
-          if (
+          } else if (
             selectedValues.length === 4 &&
             selectedValues.indexOf("a") === 0 &&
             selectedValues.indexOf("b") === 1 &&
@@ -428,6 +417,22 @@
           ) {
             window.location.href = "thumbfinger.html";
             console.log(4);
+          } else {
+            // Array of possible null pages
+            const nullPages = [
+              "null1.html",
+              "null2.html",
+              "null3.html",
+              "null4.html",
+            ];
+
+            // Select a random page from the array
+            const randomPage =
+              nullPages[Math.floor(Math.random() * nullPages.length)];
+
+            // Redirect to the randomly selected page
+            window.location.href = randomPage;
+            console.log(`Redirected to ${randomPage}`);
           }
         });
       });

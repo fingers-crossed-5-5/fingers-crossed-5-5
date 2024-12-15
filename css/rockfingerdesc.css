@@ -51,6 +51,45 @@
   border: 0px;
   padding: 0px;
 }
+.navbar {
+  padding: 0px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+.main {
+  margin-top: 100px;
+  margin-left: -75px;
+  position: fixed;
+  top: 100px;
+}
+
+.aboutus {
+  margin-top: 100px;
+  margin-left: -100px;
+  position: fixed;
+  top: 300px;
+}
+.sidenav a img {
+  margin-top: 20px;
+  margin-left: 115px;
+}
+.pointing_finger {
+  rotate: 30deg;
+}
+.pointing_finger:hover {
+  rotate: 0deg;
+}
 .openNav {
   margin-right: 80px;
   margin-top: 5px;
@@ -63,7 +102,6 @@
   color: #818181;
   display: block;
   transition: 0.3s;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .sidenav a:hover {
   color: #ff00a4;
@@ -75,12 +113,15 @@
   font-size: 50px;
   margin-left: 60px;
 }
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 1920px) {
   .sidenav {
     padding-top: 15px;
   }
   .sidenav a {
     font-size: 18px;
+  }
+  .container {
+    font-size: 20px;
   }
 }
 body {
