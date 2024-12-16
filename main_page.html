@@ -243,6 +243,85 @@
       <img src="./img/info_2.png" width="607px" height="auto" class="info_2" />
       <img src="./img/info_3.png" width="607px" height="auto" class="info_3" />
     </div>
+    <!--------------------->
+    <div id="ad-popup" class="ad-popup">
+      <div class="ad-content">
+        <img id="ad-image" src="" alt="Ad Banner" />
+        <button id="close-ad" class="close-btn">&times;</button>
+      </div>
+    </div>
+    <!--------------------->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll(".card-title a");
+        const displayedImage = document.getElementById("displayedImage"); // 預設圖片的容器
+
+        links.forEach((link) => {
+          link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const imgSrc = link.getAttribute("data-img");
+            displayedImage.src = imgSrc; // 更新圖片路徑
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const adPopup = document.getElementById("ad-popup");
+        const adImage = document.getElementById("ad-image");
+        const closeAd = document.getElementById("close-ad");
+
+        // 圖片清單
+        const adImages = [
+          "./img/bug_img_ez.png",
+          "./img/bug_img_jc.png",
+          "./img/bug_img_sx.png",
+          "./img/bug_img_cd.png",
+          "./img/bug_img_idealface.png",
+          "./img/bug_img_ntua.png",
+          "./img/bug_img_togalaxy.png",
+          "./img/bug_img_yali.png",
+          "./img/bug_img_yali2.png",
+        ];
+
+        let currentImageIndex = 0;
+
+        function showAd() {
+          adImage.src = adImages[currentImageIndex];
+
+          // 隨機定位廣告
+          const viewportWidth = window.innerWidth; // 瀏覽器視窗寬度
+          const viewportHeight = window.innerHeight; // 瀏覽器視窗高度
+          const adWidth = 300; // 假設廣告寬度
+          const adHeight = 200; // 假設廣告高度
+
+          // 隨機生成位置
+          const randomTop = Math.random() * (viewportHeight - adHeight);
+          const randomLeft = Math.random() * (viewportWidth - adWidth);
+
+          // 設定廣告位置
+          adPopup.style.top = `${randomTop}px`;
+          adPopup.style.left = `${randomLeft}px`;
+          adPopup.style.display = "block"; // 顯示廣告
+
+          // 更新圖片索引
+          currentImageIndex = (currentImageIndex + 1) % adImages.length;
+
+          // 自動關閉廣告
+          setTimeout(() => {
+            adPopup.style.display = "none";
+          }, 15000); // 5秒後自動關閉
+        }
+
+        // 每隔指定時間出現一次廣告
+        setInterval(showAd, 20000); // 每10秒出現一次
+
+        // 關閉按鈕點擊事件
+        closeAd.addEventListener("click", () => {
+          adPopup.style.display = "none";
+        });
+      });
+    </script>
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "410px";
