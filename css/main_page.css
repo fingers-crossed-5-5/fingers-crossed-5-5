@@ -156,7 +156,11 @@ span {
   bottom: 500px;
   left: 1320px;
 }
-
+.reset_nav {
+  position: fixed;
+  right: 142px;
+  bottom: 350px;
+}
 .reset_button {
   position: fixed;
   right: 142px;
