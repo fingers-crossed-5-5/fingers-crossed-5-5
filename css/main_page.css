@@ -346,6 +346,16 @@ span {
   transition: top 0.3s ease, left 0.3s ease; /* 平滑移動效果 */
 }
 
+/* 廣告彈窗樣式 */
+.ad-popup {
+  position: fixed; /* 支援動態定位 */
+  width: auto;
+  height: auto;
+  z-index: 1000;
+  display: none; /* 預設隱藏 */
+  transition: top 0.3s ease, left 0.3s ease; /* 平滑移動效果 */
+}
+
 /* 廣告內容 */
 .ad-content {
   position: relative;

@@ -54,6 +54,9 @@
 .navbar {
   padding: 0px;
 }
+span {
+  color: #ff0000;
+}
 .sidenav {
   height: 100%;
   width: 0;
